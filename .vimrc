@@ -15,6 +15,8 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'rking/ag.vim'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'matchit.zip'
+Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -195,3 +197,4 @@ endif
 map <C-n> :NERDTreeToggle<CR>
 
 :set cpoptions+=$
+let g:airline_powerline_fonts = 1 
