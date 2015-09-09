@@ -11,8 +11,8 @@ cd
 git clone https://github.com/rodrigopdl/dot-files.git my-dot-files-dir
 ln -s my-dot-files-dir/.zshrc .zshrc
 ln -s my-dot-files-dir/.tmux.conf .tmux.conf
-ln -s my-dot-files-dir/.vimrc .vimrc
 ln -s my-dot-files-dir/vim .vim
+ln -s my-dot-files-dir/vim/.vimrc .vimrc
 cd .vim
 git submodule init
 git submodule update
