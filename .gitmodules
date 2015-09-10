@@ -241,3 +241,6 @@
 [submodule "vim/indent/web-indent"]
 	path = vim/indent/web-indent
 	url = https://github.com/lukaszb/vim-web-indent.git
+[submodule "vim/plugins/vim-railscasts-theme"]
+	path = vim/plugins/vim-railscasts-theme
+	url = https://github.com/jpo/vim-railscasts-theme.git

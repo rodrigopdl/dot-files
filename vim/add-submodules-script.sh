@@ -28,6 +28,7 @@ git submodule add https://github.com/scrooloose/nerdcommenter.git plugins/nerdco
 git submodule add https://github.com/scrooloose/nerdtree.git plugins/nerdtree
 git submodule add https://github.com/chrisbra/NrrwRgn.git plugins/NrrwRgn
 git submodule add https://github.com/tpope/vim-obsession.git plugins/obsession
+git submodule add https://github.com/jpo/vim-railscasts-theme.git plugins/vim-railscasts-theme
 git submodule add https://github.com/tpope/vim-rake.git plugins/rake
 git submodule add https://github.com/tpope/vim-repeat.git plugins/repeat
 git submodule add https://github.com/rafaelfranca/rtf_pygmentize.git plugins/rtf_pygmentize
