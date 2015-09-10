@@ -75,9 +75,6 @@
 [submodule "plugins/obsession"]
 	path = plugins/obsession
 	url = https://github.com/tpope/vim-obsession.git
-[submodule "plugins/vim-railscasts-theme"]
-	path = plugins/vim-railscasts-theme
-	url = https://github.com/jpo/vim-railscasts-theme.git
 [submodule "plugins/rake"]
 	path = plugins/rake
 	url = https://github.com/tpope/vim-rake.git
