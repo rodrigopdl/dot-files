@@ -3,6 +3,11 @@
 	path = core/pathogen
 	url = https://github.com/tpope/vim-pathogen.git
 
+# Indent
+[submodule "indent/web-indent"]
+	path = indent/web-indent
+	url = https://github.com/lukaszb/vim-web-indent.git
+
 # Plugins
 [submodule "plugins/abolish"]
 	path = plugins/abolish

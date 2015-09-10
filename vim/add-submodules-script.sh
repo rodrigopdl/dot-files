@@ -1,6 +1,9 @@
 # Core
 git submodule add https://github.com/tpope/vim-pathogen.git core/pathogen
 
+# Indent
+git submodule add https://github.com/lukaszb/vim-web-indent.git indent/web-indent
+
 # Plugins
 git submodule add https://github.com/tpope/vim-abolish.git plugins/abolish
 git submodule add https://github.com/mileszs/ack.vim.git plugins/ack

@@ -232,3 +232,12 @@
 [submodule "vim/plugins/vim-airline"]
 	path = vim/plugins/vim-airline
 	url = https://github.com/bling/vim-airline
+[submodule "core/pathogen"]
+	path = core/pathogen
+	url = https://github.com/tpope/vim-pathogen.git
+[submodule "indent/web-indent"]
+	path = indent/web-indent
+	url = https://github.com/lukaszb/vim-web-indent.git
+[submodule "vim/indent/web-indent"]
+	path = vim/indent/web-indent
+	url = https://github.com/lukaszb/vim-web-indent.git
