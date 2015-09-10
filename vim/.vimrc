@@ -140,10 +140,10 @@ map <Leader>n :NERDTreeToggle<CR>
 ""
 "" Layout
 ""
-colorscheme railscasts
 if !has("gui_running")
   set t_Co=256
 endif
+colorscheme railscasts
 
 ""
 "" Pathogen & extentions

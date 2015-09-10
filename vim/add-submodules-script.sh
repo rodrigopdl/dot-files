@@ -4,6 +4,7 @@ git submodule add https://github.com/tpope/vim-pathogen.git core/pathogen
 # Plugins
 git submodule add https://github.com/tpope/vim-abolish.git plugins/abolish
 git submodule add https://github.com/mileszs/ack.vim.git plugins/ack
+git submodule add https://github.com/bling/vim-airline plugins/vim-airline
 git submodule add https://github.com/tpope/vim-bundler.git plugins/bundler
 git submodule add https://github.com/tpope/vim-commentary.git plugins/commentary
 git submodule add https://github.com/ap/vim-css-color.git plugins/css-color

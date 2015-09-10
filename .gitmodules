@@ -229,3 +229,6 @@
 [submodule "vim/langs/textile"]
 	path = vim/langs/textile
 	url = https://github.com/timcharper/textile.vim.git
+[submodule "vim/plugins/vim-airline"]
+	path = vim/plugins/vim-airline
+	url = https://github.com/bling/vim-airline
