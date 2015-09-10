@@ -17,3 +17,7 @@ cd .vim
 git submodule init
 git submodule update
 ```
+
+# Special considerations
+
+If submodules init fails, run vim/add-submodules-script.sh first.
