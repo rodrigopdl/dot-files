@@ -1,241 +1,241 @@
 # Core
-[submodule "vim/core/pathogen"]
-  path = vim/core/pathogen
-  url = https://github.com/tpope/vim-pathogen.git
+[submodule "core/pathogen"]
+	path = core/pathogen
+	url = https://github.com/tpope/vim-pathogen.git
 
 # Indent
-[submodule "vim/indent/web-indent"]
-  path = vim/indent/web-indent
-  url = https://github.com/lukaszb/vim-web-indent.git
+[submodule "indent/web-indent"]
+	path = indent/web-indent
+	url = https://github.com/lukaszb/vim-web-indent.git
 
 # Plugins
-[submodule "vim/plugins/abolish"]
-  path = vim/plugins/abolish
-  url = https://github.com/tpope/vim-abolish.git
-[submodule "vim/plugins/ack"]
-  path = vim/plugins/ack
-  url = https://github.com/mileszs/ack.vim.git
-[submodule "vim/plugins/bundler"]
-  path = vim/plugins/bundler
-  url = https://github.com/tpope/vim-bundler.git
-[submodule "vim/plugins/commentary"]
-  path = vim/plugins/commentary
-  url = https://github.com/tpope/vim-commentary.git
-[submodule "vim/plugins/css-color"]
-  path = vim/plugins/css-color
-  url = https://github.com/ap/vim-css-color.git
-[submodule "vim/plugins/ctrlp"]
-  path = vim/plugins/ctrlp
-  url = https://github.com/kien/ctrlp.vim.git
-[submodule "vim/plugins/dispatch"]
-  path = vim/plugins/dispatch
-  url = https://github.com/tpope/vim-dispatch.git
-[submodule "vim/plugins/endwise"]
-  path = vim/plugins/endwise
-  url = https://github.com/tpope/vim-endwise.git
-[submodule "vim/plugins/eunuch"]
-  path = vim/plugins/eunuch
-  url = https://github.com/tpope/vim-eunuch.git
-[submodule "vim/plugins/file-line"]
-  path = vim/plugins/file-line
-  url = https://github.com/bogado/file-line.git
-[submodule "vim/plugins/flex"]
-  path = vim/plugins/flex
-  url = https://github.com/vim-scripts/Flex-Development-Support.git
-[submodule "vim/plugins/fugitive"]
-  path = vim/plugins/fugitive
-  url = https://github.com/tpope/vim-fugitive.git
-[submodule "vim/plugins/gist"]
-  path = vim/plugins/gist
-  url = https://github.com/mattn/gist-vim.git
-[submodule "vim/plugins/gitgutter"]
-  path = vim/plugins/gitgutter
-  url = https://github.com/airblade/vim-gitgutter.git
-[submodule "vim/plugins/gnupg"]
-  path = vim/plugins/gnupg
-  url = https://github.com/jamessan/vim-gnupg.git
-[submodule "vim/plugins/jshint2"]
-  path = vim/plugins/jshint2
-  url = https://github.com/Shutnik/jshint2.vim.git
-[submodule "vim/plugins/matchit"]
-  path = vim/plugins/matchit
-  url = https://github.com/edsono/vim-matchit.git
-[submodule "vim/plugins/multiple-cursors"]
-  path = vim/plugins/multiple-cursors
-  url = https://github.com/terryma/vim-multiple-cursors.git
-[submodule "vim/plugins/nerdcommenter"]
-  path = vim/plugins/nerdcommenter
-  url = https://github.com/scrooloose/nerdcommenter.git
-[submodule "vim/plugins/nerdtree"]
-  path = vim/plugins/nerdtree
-  url = https://github.com/scrooloose/nerdtree.git
-[submodule "vim/plugins/NrrwRgn"]
-  path = vim/plugins/NrrwRgn
-  url = https://github.com/chrisbra/NrrwRgn.git
-[submodule "vim/plugins/obsession"]
-  path = vim/plugins/obsession
-  url = https://github.com/tpope/vim-obsession.git
-[submodule "vim/plugins/rake"]
-  path = vim/plugins/rake
-  url = https://github.com/tpope/vim-rake.git
-[submodule "vim/plugins/repeat"]
-  path = vim/plugins/repeat
-  url = https://github.com/tpope/vim-repeat.git
-[submodule "vim/plugins/rtf_pygmentize"]
-  path = vim/plugins/rtf_pygmentize
-  url = https://github.com/rafaelfranca/rtf_pygmentize.git
-[submodule "vim/plugins/sbt"]
-  path = vim/plugins/sbt
-  url = https://github.com/ktvoelker/sbt-vim.git
-[submodule "vim/plugins/snippets"]
-  path = vim/plugins/snippets
-  url = https://github.com/honza/vim-snippets.git
-[submodule "vim/plugins/speeddating"]
-  path = vim/plugins/speeddating
-  url = https://github.com/tpope/vim-speeddating.git
-[submodule "vim/plugins/surround"]
-  path = vim/plugins/surround
-  url = https://github.com/tpope/vim-surround.git
-[submodule "vim/plugins/syntastic"]
-  path = vim/plugins/syntastic
-  url = https://github.com/scrooloose/syntastic.git
-[submodule "vim/plugins/tagbar"]
-  path = vim/plugins/tagbar
-  url = https://github.com/majutsushi/tagbar.git
-[submodule "vim/plugins/taglist"]
-  path = vim/plugins/taglist
-  url = https://github.com/vim-scripts/taglist.vim.git
-[submodule "vim/plugins/tbone"]
-  path = vim/plugins/tbone
-  url = https://github.com/tpope/vim-tbone.git
-[submodule "vim/plugins/textobj-entire"]
-  path = vim/plugins/textobj-entire
-  url = https://github.com/kana/vim-textobj-entire.git
-[submodule "vim/plugins/textobj-function"]
-  path = vim/plugins/textobj-function
-  url = https://github.com/kana/vim-textobj-function.git
-[submodule "vim/plugins/textobj-function-ruby"]
-  path = vim/plugins/textobj-function-ruby
-  url = https://github.com/t9md/vim-textobj-function-ruby.git
-[submodule "vim/plugins/textobj-indent"]
-  path = vim/plugins/textobj-indent
-  url = https://github.com/kana/vim-textobj-indent.git
-[submodule "vim/plugins/textobj-line"]
-  path = vim/plugins/textobj-line
-  url = https://github.com/kana/vim-textobj-line.git
-[submodule "vim/plugins/textobj-rubyblock"]
-  path = vim/plugins/textobj-rubyblock
-  url = https://github.com/nelstrom/vim-textobj-rubyblock.git
-[submodule "vim/plugins/textobj-user"]
-  path = vim/plugins/textobj-user
-  url = https://github.com/kana/vim-textobj-user.git
-[submodule "vim/plugins/trailing-whitespace"]
-  path = vim/plugins/trailing-whitespace
-  url = https://github.com/bronson/vim-trailing-whitespace.git
-[submodule "vim/plugins/unimpaired"]
-  path = vim/plugins/unimpaired
-  url = https://github.com/tpope/vim-unimpaired.git
-[submodule "vim/plugins/ultisnips"]
-  path = vim/plugins/ultisnips
-  url = https://github.com/SirVer/ultisnips.git
-[submodule "vim/plugins/vroom"]
-  path = vim/plugins/vroom
-  url = https://github.com/skalnik/vim-vroom.git
-[submodule "vim/plugins/webapi"]
-  path = vim/plugins/webapi
-  url = https://github.com/mattn/webapi-vim.git
-[submodule "vim/plugins/zoomwin"]
-  path = vim/plugins/zoomwin
-  url = https://github.com/regedarek/ZoomWin.git
+[submodule "plugins/abolish"]
+	path = plugins/abolish
+	url = https://github.com/tpope/vim-abolish.git
+[submodule "plugins/ack"]
+	path = plugins/ack
+	url = https://github.com/mileszs/ack.vim.git
+[submodule "plugins/bundler"]
+	path = plugins/bundler
+	url = https://github.com/tpope/vim-bundler.git
+[submodule "plugins/commentary"]
+	path = plugins/commentary
+	url = https://github.com/tpope/vim-commentary.git
+[submodule "plugins/css-color"]
+	path = plugins/css-color
+	url = https://github.com/ap/vim-css-color.git
+[submodule "plugins/ctrlp"]
+	path = plugins/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "plugins/dispatch"]
+	path = plugins/dispatch
+	url = https://github.com/tpope/vim-dispatch.git
+[submodule "plugins/endwise"]
+	path = plugins/endwise
+	url = https://github.com/tpope/vim-endwise.git
+[submodule "plugins/eunuch"]
+	path = plugins/eunuch
+	url = https://github.com/tpope/vim-eunuch.git
+[submodule "plugins/file-line"]
+	path = plugins/file-line
+	url = https://github.com/bogado/file-line.git
+[submodule "plugins/flex"]
+	path = plugins/flex
+	url = https://github.com/vim-scripts/Flex-Development-Support.git
+[submodule "plugins/fugitive"]
+	path = plugins/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "plugins/gist"]
+	path = plugins/gist
+	url = https://github.com/mattn/gist-vim.git
+[submodule "plugins/gitgutter"]
+	path = plugins/gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "plugins/gnupg"]
+	path = plugins/gnupg
+	url = https://github.com/jamessan/vim-gnupg.git
+[submodule "plugins/jshint2"]
+	path = plugins/jshint2
+	url = https://github.com/Shutnik/jshint2.vim.git
+[submodule "plugins/matchit"]
+	path = plugins/matchit
+	url = https://github.com/edsono/vim-matchit.git
+[submodule "plugins/multiple-cursors"]
+	path = plugins/multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule "plugins/nerdcommenter"]
+	path = plugins/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "plugins/nerdtree"]
+	path = plugins/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "plugins/NrrwRgn"]
+	path = plugins/NrrwRgn
+	url = https://github.com/chrisbra/NrrwRgn.git
+[submodule "plugins/obsession"]
+	path = plugins/obsession
+	url = https://github.com/tpope/vim-obsession.git
+[submodule "plugins/rake"]
+	path = plugins/rake
+	url = https://github.com/tpope/vim-rake.git
+[submodule "plugins/repeat"]
+	path = plugins/repeat
+	url = https://github.com/tpope/vim-repeat.git
+[submodule "plugins/rtf_pygmentize"]
+	path = plugins/rtf_pygmentize
+	url = https://github.com/rafaelfranca/rtf_pygmentize.git
+[submodule "plugins/sbt"]
+	path = plugins/sbt
+	url = https://github.com/ktvoelker/sbt-vim.git
+[submodule "plugins/snippets"]
+	path = plugins/snippets
+	url = https://github.com/honza/vim-snippets.git
+[submodule "plugins/speeddating"]
+	path = plugins/speeddating
+	url = https://github.com/tpope/vim-speeddating.git
+[submodule "plugins/surround"]
+	path = plugins/surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "plugins/syntastic"]
+	path = plugins/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "plugins/tagbar"]
+	path = plugins/tagbar
+	url = https://github.com/majutsushi/tagbar.git
+[submodule "plugins/taglist"]
+	path = plugins/taglist
+	url = https://github.com/vim-scripts/taglist.vim.git
+[submodule "plugins/tbone"]
+	path = plugins/tbone
+	url = https://github.com/tpope/vim-tbone.git
+[submodule "plugins/textobj-entire"]
+	path = plugins/textobj-entire
+	url = https://github.com/kana/vim-textobj-entire.git
+[submodule "plugins/textobj-function"]
+	path = plugins/textobj-function
+	url = https://github.com/kana/vim-textobj-function.git
+[submodule "plugins/textobj-function-ruby"]
+	path = plugins/textobj-function-ruby
+	url = https://github.com/t9md/vim-textobj-function-ruby.git
+[submodule "plugins/textobj-indent"]
+	path = plugins/textobj-indent
+	url = https://github.com/kana/vim-textobj-indent.git
+[submodule "plugins/textobj-line"]
+	path = plugins/textobj-line
+	url = https://github.com/kana/vim-textobj-line.git
+[submodule "plugins/textobj-rubyblock"]
+	path = plugins/textobj-rubyblock
+	url = https://github.com/nelstrom/vim-textobj-rubyblock.git
+[submodule "plugins/textobj-user"]
+	path = plugins/textobj-user
+	url = https://github.com/kana/vim-textobj-user.git
+[submodule "plugins/trailing-whitespace"]
+	path = plugins/trailing-whitespace
+	url = https://github.com/bronson/vim-trailing-whitespace.git
+[submodule "plugins/unimpaired"]
+	path = plugins/unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "plugins/ultisnips"]
+	path = plugins/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
+[submodule "plugins/vroom"]
+	path = plugins/vroom
+	url = https://github.com/skalnik/vim-vroom.git
+[submodule "plugins/webapi"]
+	path = plugins/webapi
+	url = https://github.com/mattn/webapi-vim.git
+[submodule "plugins/zoomwin"]
+	path = plugins/zoomwin
+	url = https://github.com/regedarek/ZoomWin.git
 
 # Langs
-[submodule "vim/langs/arduino"]
-  path = vim/langs/arduino
-  url = https://github.com/vim-scripts/Arduino-syntax-file.git
-[submodule "vim/langs/clojure"]
-  path = vim/langs/clojure
-  url = https://github.com/guns/vim-clojure-static.git
-[submodule "vim/langs/coffeescript"]
-  path = vim/langs/coffeescript
-  url = https://github.com/kchmck/vim-coffee-script.git
-[submodule "vim/langs/csv"]
-  path = vim/langs/csv
-  url = https://github.com/vim-scripts/csv.vim.git
-[submodule "vim/langs/cucumber"]
-  path = vim/langs/cucumber
-  url = https://github.com/tpope/vim-cucumber.git
-[submodule "vim/langs/elixir"]
-  path = vim/langs/elixir
-  url = https://github.com/elixir-lang/vim-elixir.git
-[submodule "vim/langs/erlang"]
-  path = vim/langs/erlang
-  url = https://github.com/jimenezrick/vimerl.git
-[submodule "vim/langs/git"]
-  path = vim/langs/git
-  url = https://github.com/tpope/vim-git.git
-[submodule "vim/langs/golang"]
-  path = vim/langs/golang
-  url = https://github.com/fatih/vim-go.git
-[submodule "vim/langs/haml"]
-  path = vim/langs/haml
-  url = https://github.com/tpope/vim-haml.git
-[submodule "vim/langs/haskell"]
-  path = vim/langs/haskell
-  url = https://github.com/wvim/langstroth/vim-haskell.git
-[submodule "vim/langs/html5"]
-  path = vim/langs/html5
-  url = https://github.com/othree/html5.vim.git
-[submodule "vim/langs/javascript"]
-  path = vim/langs/javascript
-  url = https://github.com/pangloss/vim-javascript.git
-[submodule "vim/langs/less"]
-  path = vim/langs/less
-  url = https://github.com/groenewege/vim-less.git
-[submodule "vim/langs/liquid"]
-  path = vim/langs/liquid
-  url = https://github.com/tpope/vim-liquid.git
-[submodule "vim/langs/markdown"]
-  path = vim/langs/markdown
-  url = https://github.com/tpope/vim-markdown.git
-[submodule "vim/langs/minitest"]
-  path = vim/langs/minitest
-  url = https://github.com/sunaku/vim-ruby-minitest.git
-[submodule "vim/langs/mustache-handlebars"]
-  path = vim/langs/mustache-handlebars
-  url = https://github.com/mustache/vim-mustache-handlebars.git
-[submodule "vim/langs/nodejs"]
-  path = vim/langs/nodejs
-  url = https://github.com/mmalecki/vim-node.js.git
-[submodule "vim/langs/puppet"]
-  path = vim/langs/puppet
-  url = https://github.com/ajf/puppet-vim.git
-[submodule "vim/langs/ragel"]
-  path = vim/langs/ragel
-  url = https://github.com/jayferd/ragel.vim.git
-[submodule "vim/langs/rails"]
-  path = vim/langs/rails
-  url = https://github.com/tpope/vim-rails.git
-[submodule "vim/langs/rdoc"]
-  path = vim/langs/rdoc
-  url = https://github.com/depuracao/vim-rdoc.git
-[submodule "vim/langs/rspec"]
-  path = vim/langs/rspec
-  url = https://github.com/skwp/vim-rspec.git
-[submodule "vim/langs/ruby"]
-  path = vim/langs/ruby
-  url = https://github.com/vim-ruby/vim-ruby.git
-[submodule "vim/langs/rust"]
-  path = vim/langs/rust
-  url = https://github.com/wting/rust.vim.git
-[submodule "vim/langs/scala"]
-  path = vim/langs/scala
-  url = https://github.com/derekwyatt/vim-scala.git
-[submodule "vim/langs/scss"]
-  path = vim/langs/scss
-  url = https://github.com/cakebaker/scss-syntax.vim.git
-[submodule "vim/langs/slim"]
-  path = vim/langs/slim
-  url = https://github.com/slim-template/vim-slim.git
-[submodule "vim/langs/textile"]
-  path = vim/langs/textile
-  url = https://github.com/timcharper/textile.vim.git
+[submodule "langs/arduino"]
+	path = langs/arduino
+	url = https://github.com/vim-scripts/Arduino-syntax-file.git
+[submodule "langs/clojure"]
+	path = langs/clojure
+	url = https://github.com/guns/vim-clojure-static.git
+[submodule "langs/coffeescript"]
+	path = langs/coffeescript
+	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "langs/csv"]
+	path = langs/csv
+	url = https://github.com/vim-scripts/csv.vim.git
+[submodule "langs/cucumber"]
+	path = langs/cucumber
+	url = https://github.com/tpope/vim-cucumber.git
+[submodule "langs/elixir"]
+	path = langs/elixir
+	url = https://github.com/elixir-lang/vim-elixir.git
+[submodule "langs/erlang"]
+	path = langs/erlang
+	url = https://github.com/jimenezrick/vimerl.git
+[submodule "langs/git"]
+	path = langs/git
+	url = https://github.com/tpope/vim-git.git
+[submodule "langs/golang"]
+	path = langs/golang
+	url = https://github.com/fatih/vim-go.git
+[submodule "langs/haml"]
+	path = langs/haml
+	url = https://github.com/tpope/vim-haml.git
+[submodule "langs/haskell"]
+	path = langs/haskell
+	url = https://github.com/wlangstroth/vim-haskell.git
+[submodule "langs/html5"]
+	path = langs/html5
+	url = https://github.com/othree/html5.vim.git
+[submodule "langs/javascript"]
+	path = langs/javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "langs/less"]
+	path = langs/less
+	url = https://github.com/groenewege/vim-less.git
+[submodule "langs/liquid"]
+	path = langs/liquid
+	url = https://github.com/tpope/vim-liquid.git
+[submodule "langs/markdown"]
+	path = langs/markdown
+	url = https://github.com/tpope/vim-markdown.git
+[submodule "langs/minitest"]
+	path = langs/minitest
+	url = https://github.com/sunaku/vim-ruby-minitest.git
+[submodule "langs/mustache-handlebars"]
+	path = langs/mustache-handlebars
+	url = https://github.com/mustache/vim-mustache-handlebars.git
+[submodule "langs/nodejs"]
+	path = langs/nodejs
+	url = https://github.com/mmalecki/vim-node.js.git
+[submodule "langs/puppet"]
+	path = langs/puppet
+	url = https://github.com/ajf/puppet-vim.git
+[submodule "langs/ragel"]
+	path = langs/ragel
+	url = https://github.com/jayferd/ragel.vim.git
+[submodule "langs/rails"]
+	path = langs/rails
+	url = https://github.com/tpope/vim-rails.git
+[submodule "langs/rdoc"]
+	path = langs/rdoc
+	url = https://github.com/depuracao/vim-rdoc.git
+[submodule "langs/rspec"]
+	path = langs/rspec
+	url = https://github.com/skwp/vim-rspec.git
+[submodule "langs/ruby"]
+	path = langs/ruby
+	url = https://github.com/vim-ruby/vim-ruby.git
+[submodule "langs/rust"]
+	path = langs/rust
+	url = https://github.com/wting/rust.vim.git
+[submodule "langs/scala"]
+	path = langs/scala
+	url = https://github.com/derekwyatt/vim-scala.git
+[submodule "langs/scss"]
+	path = langs/scss
+	url = https://github.com/cakebaker/scss-syntax.vim.git
+[submodule "langs/slim"]
+	path = langs/slim
+	url = https://github.com/slim-template/vim-slim.git
+[submodule "langs/textile"]
+	path = langs/textile
+	url = https://github.com/timcharper/textile.vim.git
