@@ -200,6 +200,11 @@ else
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
 
+""
+"" Open quickfix window after any grep invocation
+""
+autocmd QuickFixCmdPost *grep* cwindow
+
 " Include user's local vim after config
 if filereadable(expand("~/.vimrc.after"))
   source ~/.vimrc.after
