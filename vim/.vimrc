@@ -205,6 +205,9 @@ endif
 ""
 autocmd QuickFixCmdPost *grep* cwindow
 
+map <leader>y "0y
+map <leader>p "0p
+
 " Include user's local vim after config
 if filereadable(expand("~/.vimrc.after"))
   source ~/.vimrc.after
