@@ -233,6 +233,29 @@ nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 nnoremap \ :Ag<SPACE>
 
+""
+"" Toggle HardMode()
+""
+nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
+
+""
+"" Set Relative Numbers
+""
+set relativenumber
+
+""
+"" Relative number toggle
+""
+nnoremap <silent><leader>n :set relativenumber!<cr>
+
+""
+"" Disable arrow keys
+""
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
 " Include user's local vim after config
 if filereadable(expand("~/.vimrc.after"))
   source ~/.vimrc.after

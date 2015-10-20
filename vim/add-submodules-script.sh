@@ -21,6 +21,7 @@ git submodule add https://github.com/tpope/vim-fugitive.git plugins/fugitive
 git submodule add https://github.com/mattn/gist-vim.git plugins/gist
 git submodule add https://github.com/airblade/vim-gitgutter.git plugins/gitgutter
 git submodule add https://github.com/jamessan/vim-gnupg.git plugins/gnupg
+git submodule add https://github.com/wikitopian/hardmode.git plugins/hard-mode
 git submodule add https://github.com/Shutnik/jshint2.vim.git plugins/jshint2
 git submodule add https://github.com/edsono/vim-matchit.git plugins/matchit
 git submodule add https://github.com/terryma/vim-multiple-cursors.git plugins/multiple-cursors
