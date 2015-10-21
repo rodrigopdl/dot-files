@@ -241,7 +241,7 @@ nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
 ""
 "" Set Relative Numbers
 ""
-set relativenumber
+" set relativenumber
 
 ""
 "" Relative number toggle
