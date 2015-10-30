@@ -83,6 +83,7 @@ export BUNDLER_EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll='ls -l'
 alias cl='clear'
+alias be="bundle exec"
 
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
