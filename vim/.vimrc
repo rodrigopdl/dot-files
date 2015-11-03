@@ -234,9 +234,9 @@ command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 nnoremap \ :Ag<SPACE>
 
 ""
-"" Toggle HardMode()
+"" HardTime running in every buffer
 ""
-nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
+let g:hardtime_default_on = 1
 
 ""
 "" Set Relative Numbers

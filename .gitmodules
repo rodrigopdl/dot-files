@@ -244,3 +244,6 @@
 [submodule "vim/plugins/vim-railscasts-theme"]
 	path = vim/plugins/vim-railscasts-theme
 	url = https://github.com/jpo/vim-railscasts-theme.git
+[submodule "vim/plugins/hardtime"]
+	path = vim/plugins/hardtime
+	url = https://github.com/takac/vim-hardtime.git
