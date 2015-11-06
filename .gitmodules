@@ -247,3 +247,6 @@
 [submodule "vim/plugins/hardtime"]
 	path = vim/plugins/hardtime
 	url = https://github.com/takac/vim-hardtime.git
+[submodule "vim/plugins/qfenter"]
+	path = vim/plugins/qfenter
+	url = https://github.com/yssl/QFEnter.git
