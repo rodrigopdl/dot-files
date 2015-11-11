@@ -27,6 +27,9 @@
 [submodule "plugins/ctrlp"]
 	path = plugins/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
+[submodule "plugins/delimitmate"]
+	path = plugins/delimitmate
+	url = https://github.com/Raimondi/delimitMate
 [submodule "plugins/dispatch"]
 	path = plugins/dispatch
 	url = https://github.com/tpope/vim-dispatch.git

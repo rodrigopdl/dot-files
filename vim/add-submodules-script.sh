@@ -12,6 +12,7 @@ git submodule add https://github.com/tpope/vim-bundler.git plugins/bundler
 git submodule add https://github.com/tpope/vim-commentary.git plugins/commentary
 git submodule add https://github.com/ap/vim-css-color.git plugins/css-color
 git submodule add https://github.com/kien/ctrlp.vim.git plugins/ctrlp
+git submodule add https://github.com/Raimondi/delimitMate plugins/delimitmate
 git submodule add https://github.com/tpope/vim-dispatch.git plugins/dispatch
 git submodule add https://github.com/tpope/vim-endwise.git plugins/endwise
 git submodule add https://github.com/tpope/vim-eunuch.git plugins/eunuch
