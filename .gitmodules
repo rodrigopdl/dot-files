@@ -94,6 +94,9 @@
 [submodule "vim/plugins/ultisnips"]
 	path = vim/plugins/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
+[submodule "vim/plugins/vim-rspec"]
+	path = vim/plugins/vim-rspec
+	url = https://github.com/thoughtbot/vim-rspec.git
 [submodule "vim/plugins/vroom"]
 	path = vim/plugins/vroom
 	url = https://github.com/skalnik/vim-vroom.git

@@ -51,6 +51,7 @@ git submodule add https://github.com/kana/vim-textobj-user.git plugins/textobj-u
 git submodule add https://github.com/bronson/vim-trailing-whitespace.git plugins/trailing-whitespace
 git submodule add https://github.com/tpope/vim-unimpaired.git plugins/unimpaired
 git submodule add https://github.com/SirVer/ultisnips.git plugins/ultisnips
+git submodule add https://github.com/thoughtbot/vim-rspec.git plugins/vim-rspec
 git submodule add https://github.com/skalnik/vim-vroom.git plugins/vroom
 git submodule add https://github.com/mattn/webapi-vim.git plugins/webapi
 git submodule add https://github.com/regedarek/ZoomWin.git plugins/zoomwin
