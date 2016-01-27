@@ -1,8 +1,3 @@
-" Include user's local vim before config
-if filereadable(expand("~/.vimrc.before"))
-  source ~/.vimrc.before
-endif
-
 ""
 "" Basic Setup
 ""
@@ -13,7 +8,6 @@ syntax on                         " turn on syntax highlighting allowing local o
 set encoding=utf-8                " set default encoding to UTF-8
 set showcmd                       " display incomplete commands
 set number                        " show line numbers
-map Q gq                          " defines the "Q" command to do formatting with the "gq" operator
 
 set clipboard=unnamed
 
@@ -146,15 +140,6 @@ endif
 colorscheme railscasts
 
 ""
-"" Pathogen & extentions
-""
-exe 'source ' . expand('~/.vim/') . 'core/pathogen/autoload/pathogen.vim'
-call pathogen#infect('indent/{}')
-call pathogen#infect('plugins/{}')
-call pathogen#infect('langs/{}')
-Helptags
-
-""
 "" Gist
 ""
 let g:gist_clip_command = 'pbcopy'
@@ -165,26 +150,9 @@ let g:gist_clip_command = 'pbcopy'
 let g:gitgutter_eager = 0
 
 ""
-"" ZoomWin
-""
-map <Leader><Leader> :ZoomWin<CR>
-
-""
 "" CtrlP
 ""
 map <C-b> :CtrlPBuffer<CR>
-
-""
-"" Bubble single lines
-""
-nmap <C-Up> [e
-nmap <C-Down> ]e
-
-""
-"" Bubble multiple lines
-""
-vmap <C-Up> [egv
-vmap <C-Down> ]egv
 
 ""
 "" Populate the g:airline_symbols dictionary with the powerline symbols
@@ -233,11 +201,6 @@ command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 nnoremap \ :Ag<SPACE>
 
 ""
-"" Relative number toggle
-""
-nnoremap <silent><leader>n :set relativenumber!<cr>
-
-""
 "" Disable arrow keys
 ""
 noremap <Up> <NOP>
@@ -253,7 +216,38 @@ map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
-" Include user's local vim after config
-if filereadable(expand("~/.vimrc.after"))
-  source ~/.vimrc.after
-endif
+""
+"" Vundle
+""
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin('~/.vim/plugins')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'scrooloose/syntastic'
+Plugin 'Tpope/vim-commentary'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'Raimondi/delimitMate'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'scrooloose/nerdtree'
+Plugin 'yssl/QFEnter'
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'skammer/vim-css-color'
+Plugin 'tpope/vim-fugitive'
+Plugin 'bling/vim-airline'
+Plugin 'rking/ag.vim'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-git'
+Plugin 'skwp/vim-rspec'
+
+call vundle#end()
+filetype plugin indent on
