@@ -3,6 +3,7 @@
 * Vim
 * Tmux
 * Oh my zsh
+* Git
 
 # Basic package installation
 
@@ -13,11 +14,10 @@ ln -s my-dot-files-dir/.zshrc .zshrc
 ln -s my-dot-files-dir/.tmux.conf .tmux.conf
 ln -s my-dot-files-dir/vim .vim
 ln -s my-dot-files-dir/vim/.vimrc .vimrc
-cd .vim
-git submodule init
-git submodule update
+ln -s my-dot-files-dir/.gitconfig .gitconfig
+Open vim and run :PluginInstall
 ```
 
-# Special considerations
+# Iterm notes
 
-If submodules init fails, run vim/add-submodules-script.sh first.
+* Font: 12pt Hack antialised
