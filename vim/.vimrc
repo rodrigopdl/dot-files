@@ -247,7 +247,7 @@ Plugin 'bling/vim-airline'
 Plugin 'rking/ag.vim'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-git'
-Plugin 'skwp/vim-rspec'
+Plugin 'thoughtbot/vim-rspec'
 
 call vundle#end()
 filetype plugin indent on
