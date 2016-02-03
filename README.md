@@ -15,6 +15,8 @@ ln -s my-dot-files-dir/.tmux.conf .tmux.conf
 ln -s my-dot-files-dir/vim .vim
 ln -s my-dot-files-dir/vim/.vimrc .vimrc
 ln -s my-dot-files-dir/.gitconfig .gitconfig
+ln -s my-dot-files-dir/.agignore .agignore
+ln -s my-dot-files-dir/.ackrc .ackrc
 Open vim and run :PluginInstall
 ```
 

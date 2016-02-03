@@ -1,10 +1,53 @@
 ""
+"" Vundle
+""
+set nocompatible
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin('~/.vim/plugins')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'scrooloose/syntastic'
+Plugin 'Tpope/vim-commentary'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'Raimondi/delimitMate'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'scrooloose/nerdtree'
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'skammer/vim-css-color'
+Plugin 'tpope/vim-fugitive'
+Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-git'
+Plugin 'thoughtbot/vim-rspec'
+
+call vundle#end()
+filetype plugin indent on
+
+colorscheme railscasts
+
+""
+"" Disable arrow keys
+""
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
+""
 "" Basic Setup
 ""
-set nocompatible                  " use vim, no vi defaults
+syntax on                         " turn on syntax highlighting allowing local overrides
 set history=50                    " keep 50 commands and 50 search patterns in the history
 set ruler                         " show line and column number
-syntax on                         " turn on syntax highlighting allowing local overrides
 set encoding=utf-8                " set default encoding to UTF-8
 set showcmd                       " display incomplete commands
 set number                        " show line numbers
@@ -34,6 +77,8 @@ set smartcase   " ... unless they contain at least one capital letter
 set incsearch   " incremental searching
 set hlsearch    " highlight matches with the last used search pattern
 nnoremap <CR> :noh<CR><CR>
+
+set lazyredraw " Don't redraw screen when running macros.
 
 ""
 "" File types
@@ -134,15 +179,10 @@ map <F2> :NERDTreeToggle<CR>
 ""
 "" Layout
 ""
-if !has("gui_running")
-  set t_Co=256
+if &t_Co > 2 || has("gui_running")
+  syntax on
+  set hlsearch
 endif
-colorscheme railscasts
-
-""
-"" Gist
-""
-let g:gist_clip_command = 'pbcopy'
 
 ""
 "" GitGutter
@@ -168,26 +208,18 @@ else
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
 
-""
-"" Open quickfix window after any grep invocation
-""
-autocmd QuickFixCmdPost *grep* cwindow
-
 map <leader>y "0y
 map <leader>p "0p
 
 ""
 "" The Silver Searcher
 ""
-if executable('ag')
-  " Use ag over grep
-  set grepprg=ag\ --nogroup\ --nocolor
+set grepprg=ag
 
-  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-endif
-
-let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
+" Make CtrlP use ag for listing the files. Way faster and no useless files.
+" Without --hidden, it never finds .travis.yml since it starts with a dot
+let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
+let g:ctrlp_use_caching = 0
 
 ""
 "" bind K to grep word under cursor
@@ -195,18 +227,9 @@ let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 ""
-"" bind \ (backward slash) to grep shortcut
+"" Open quickfix window after any grep invocation
 ""
-command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
-nnoremap \ :Ag<SPACE>
-
-""
-"" Disable arrow keys
-""
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
+autocmd QuickFixCmdPost *grep* cwindow
 
 ""
 "" RSpec.vim mappings
@@ -217,37 +240,9 @@ map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
 ""
-"" Vundle
+"" Edit another file in the same directory as the current file
+"" uses expression to extract path from current file's path
 ""
-filetype off
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-
-call vundle#begin('~/.vim/plugins')
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-Plugin 'scrooloose/syntastic'
-Plugin 'Tpope/vim-commentary'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'Raimondi/delimitMate'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'scrooloose/nerdtree'
-Plugin 'yssl/QFEnter'
-Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'skammer/vim-css-color'
-Plugin 'tpope/vim-fugitive'
-Plugin 'bling/vim-airline'
-Plugin 'rking/ag.vim'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-git'
-Plugin 'thoughtbot/vim-rspec'
-
-call vundle#end()
-filetype plugin indent on
+map <Leader>e :e <C-R>=escape(expand("%:p:h"),' ') . '/'<CR>
+map <Leader>s :split <C-R>=escape(expand("%:p:h"), ' ') . '/'<CR>
+map <Leader>v :vnew <C-R>=escape(expand("%:p:h"), ' ') . '/'<CR>
