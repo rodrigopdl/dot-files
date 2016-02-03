@@ -20,7 +20,6 @@ Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'scrooloose/nerdtree'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'skammer/vim-css-color'
 Plugin 'tpope/vim-fugitive'
@@ -28,6 +27,8 @@ Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-git'
 Plugin 'thoughtbot/vim-rspec'
+Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'pangloss/vim-javascript'
 
 call vundle#end()
 filetype plugin indent on
@@ -171,12 +172,6 @@ set statusline+=%=\ Line:%l/%L\ (%p%%)\ \    "Line/total (%)
 set statusline+=Column:%c\                   "Column
 
 ""
-"" NERDTree
-""
-let g:NERDTreeStatusline = ' '
-map <F2> :NERDTreeToggle<CR>
-
-""
 "" Layout
 ""
 if &t_Co > 2 || has("gui_running")
@@ -246,3 +241,8 @@ map <Leader>a :call RunAllSpecs()<CR>
 map <Leader>e :e <C-R>=escape(expand("%:p:h"),' ') . '/'<CR>
 map <Leader>s :split <C-R>=escape(expand("%:p:h"), ' ') . '/'<CR>
 map <Leader>v :vnew <C-R>=escape(expand("%:p:h"), ' ') . '/'<CR>
+
+""
+"" Mustache-Handlebars
+""
+let g:mustache_operators = 0

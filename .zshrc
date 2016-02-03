@@ -88,4 +88,15 @@ alias be="bundle exec"
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 
-chruby 2.2.2
+chruby 2.1.5
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
+alias radv="rails s -p 3000"
+alias rmoj="rails s -p 5000"
+alias rora="rails s -p 6000"
+alias rbos="rails s -p 7000"
+alias rgov="rails s -p 8000"
+alias b="bundle"
+
+source ~/.bin/tmuxinator.zsh
