@@ -11,6 +11,7 @@ call vundle#begin('~/.vim/plugins')
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'scrooloose/syntastic'
 Plugin 'Tpope/vim-commentary'
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -27,7 +28,6 @@ Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-git'
 Plugin 'thoughtbot/vim-rspec'
-Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'pangloss/vim-javascript'
 
 call vundle#end()
@@ -219,7 +219,19 @@ let g:ctrlp_use_caching = 0
 ""
 "" bind K to grep word under cursor
 ""
-nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+" nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+nnoremap K :call SearchForCallSitesCursor()<CR>
+
+function! SearchForCallSitesCursor()
+  let searchTerm = expand("<cword>")
+  call SearchForCallSites(searchTerm)
+endfunction
+
+" Search for call sites for term (excluding its definition) and
+" load into the quickfix list.
+function! SearchForCallSites(term)
+  cexpr system('ag ' . shellescape(a:term) . '\| grep -v def')
+endfunction
 
 ""
 "" Open quickfix window after any grep invocation
@@ -230,7 +242,7 @@ autocmd QuickFixCmdPost *grep* cwindow
 "" RSpec.vim mappings
 ""
 map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>n :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
@@ -246,3 +258,8 @@ map <Leader>v :vnew <C-R>=escape(expand("%:p:h"), ' ') . '/'<CR>
 "" Mustache-Handlebars
 ""
 let g:mustache_operators = 0
+
+""
+"" Open Netrw
+""
+command! -nargs=* -bar -bang -count=0 -complete=dir E Explore <args>

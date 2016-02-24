@@ -97,6 +97,7 @@ alias rmoj="rails s -p 5000"
 alias rora="rails s -p 6000"
 alias rbos="rails s -p 7000"
 alias rgov="rails s -p 8000"
+alias rpon="rails s -p 6001"
 alias b="bundle"
 
 source ~/.bin/tmuxinator.zsh
