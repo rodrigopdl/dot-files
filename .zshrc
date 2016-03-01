@@ -100,4 +100,6 @@ alias rgov="rails s -p 8000"
 alias rpon="rails s -p 6001"
 alias b="bundle"
 
+alias weather="curl wttr.in"
+
 source ~/.bin/tmuxinator.zsh
