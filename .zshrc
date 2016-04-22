@@ -88,7 +88,7 @@ alias be="bundle exec"
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 
-chruby 2.1.5
+chruby 2.2.2
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
