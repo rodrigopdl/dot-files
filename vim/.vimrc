@@ -11,7 +11,6 @@ call vundle#begin('~/.vim/plugins')
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'scrooloose/syntastic'
 Plugin 'Tpope/vim-commentary'
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -29,6 +28,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-git'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'pangloss/vim-javascript'
+Plugin 'mustache/vim-mustache-handlebars'
 
 call vundle#end()
 filetype plugin indent on
@@ -263,3 +263,4 @@ let g:mustache_operators = 0
 "" Open Netrw
 ""
 command! -nargs=* -bar -bang -count=0 -complete=dir E Explore <args>
+command! -nargs=* -bar -bang -count=0 -complete=dir VE Vexplore <args>
