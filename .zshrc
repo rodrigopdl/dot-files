@@ -89,8 +89,6 @@ source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 
 chruby 2.2.2
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
 
 alias radv="rails s -p 3000"
 alias rmoj="rails s -p 5000"
