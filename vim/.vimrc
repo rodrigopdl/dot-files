@@ -19,16 +19,15 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'terryma/vim-multiple-cursors'
 Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'skammer/vim-css-color'
+Plugin 'ap/vim-css-color'
+Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-git'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'pangloss/vim-javascript'
-Plugin 'mustache/vim-mustache-handlebars'
 
 call vundle#end()
 filetype plugin indent on
