@@ -246,6 +246,11 @@ map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
 ""
+"" Overwrite the g:rspec_command variable to execute a custom command.
+""
+let g:rspec_command = "!bundle exec rspec {spec}"
+
+""
 "" Edit another file in the same directory as the current file
 "" uses expression to extract path from current file's path
 ""
