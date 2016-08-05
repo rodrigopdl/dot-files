@@ -3,5 +3,6 @@
 tags
 log/
 .netrwhist
+/vim/.netrwhist
 .bundle
 /vim/tmp
