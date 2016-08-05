@@ -1,2 +1,7 @@
-/vim/tmp
+.DS_Store
+*~
+tags
+log/
 .netrwhist
+.bundle
+/vim/tmp

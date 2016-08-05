@@ -263,3 +263,19 @@ let g:mustache_operators = 0
 ""
 command! -nargs=* -bar -bang -count=0 -complete=dir E Explore <args>
 command! -nargs=* -bar -bang -count=0 -complete=dir VE Vexplore <args>
+
+""
+"" Remap H and L (top, bottom of screen to left and right end of line)
+""
+nnoremap H ^
+nnoremap L $
+vnoremap H ^
+vnoremap L g_
+
+""
+"" Easier window switching
+""
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
