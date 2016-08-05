@@ -284,3 +284,34 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+""
+"" When jump to next match also center screen
+"" Note: Use :norm! to make it count as one command. (i.e. for i_CTRL-o)
+""
+nnoremap <silent> n :norm! nzz<CR>
+nnoremap <silent> N :norm! Nzz<CR>
+vnoremap <silent> n :norm! nzz<CR>
+vnoremap <silent> N :norm! Nzz<CR>
+
+""
+"" Same when moving up and down
+""
+nnoremap <C-u> <C-u>zz
+nnoremap <C-d> <C-d>zz
+vnoremap <C-u> <C-u>zz
+vnoremap <C-d> <C-d>zz
+
+""
+"" Setting 'scrolloff' to a large value causes the cursor to stay in the middle
+"" line when possible. To restore normal behavior, enter: 'set so=0'
+""
+set so=999
+
+""
+"" Remap H and L (top, bottom of screen to left and right end of line)
+""
+nnoremap H ^
+nnoremap L $
+vnoremap H ^
+vnoremap L g_
