@@ -51,6 +51,7 @@ set ruler                         " show line and column number
 set encoding=utf-8                " set default encoding to UTF-8
 set showcmd                       " display incomplete commands
 set number                        " show line numbers
+set relativenumber                " relative numbering
 
 set clipboard=unnamed
 
