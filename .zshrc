@@ -83,21 +83,12 @@ export BUNDLER_EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll='ls -l'
 alias cl='clear'
+alias b="bundle"
 alias be="bundle exec"
 
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 
-chruby 2.2.2
-
-alias radv="rails s -p 3000"
-alias rmoj="rails s -p 5000"
-alias rora="rails s -p 6000"
-alias rbos="rails s -p 7000"
-alias rgov="rails s -p 8000"
-alias rpon="rails s -p 6001"
-alias b="bundle"
-
-alias weather="curl wttr.in"
+chruby 2.3.1
 
 source ~/.bin/tmuxinator.zsh
