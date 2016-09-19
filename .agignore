@@ -8,3 +8,4 @@ public/assets
 /.git/
 *.svg
 public/fonts
+app/assets/images

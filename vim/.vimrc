@@ -211,10 +211,24 @@ map <leader>p "0p
 ""
 set grepprg=ag
 
-" Make CtrlP use ag for listing the files. Way faster and no useless files.
-" Without --hidden, it never finds .travis.yml since it starts with a dot
-let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
-let g:ctrlp_use_caching = 0
+""
+"" Sane Ignore For ctrlp
+""
+let g:ctrlp_custom_ignore = {
+      \ 'dir': '\.git$\|\.hg$\|\.svn$\|\.yardoc\|public\/images\|public\/system\|data\|log\|tmp$',
+      \ 'file': '\.exe$\|\.so$\|\.dat$'
+      \ }
+
+""
+"" Make CtrlP use ag for listing the files. Way faster and no useless files.
+"" Without --hidden, it never finds .travis.yml since it starts with a dot
+""
+let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor --nogroup
+      \ --ignore .git
+      \ --ignore .hg
+      \ --ignore .DS_Store
+      \ --ignore "**/*.pyc"
+      \ -g ""'
 
 ""
 "" bind K to grep word under cursor
