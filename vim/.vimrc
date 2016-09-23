@@ -330,3 +330,9 @@ nnoremap H ^
 nnoremap L $
 vnoremap H ^
 vnoremap L g_
+
+""
+"" Bubble multiple lines
+""
+vmap <C-k> [egv
+vmap <C-j> ]egv
