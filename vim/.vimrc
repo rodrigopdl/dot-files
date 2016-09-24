@@ -274,11 +274,6 @@ map <Leader>s :split <C-R>=escape(expand("%:p:h"), ' ') . '/'<CR>
 map <Leader>v :vnew <C-R>=escape(expand("%:p:h"), ' ') . '/'<CR>
 
 ""
-"" Mustache-Handlebars
-""
-let g:mustache_operators = 0
-
-""
 "" Open Netrw
 ""
 command! -nargs=* -bar -bang -count=0 -complete=dir E Explore <args>
