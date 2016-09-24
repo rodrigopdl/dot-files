@@ -185,11 +185,6 @@ endif
 let g:gitgutter_eager = 0
 
 ""
-"" CtrlP
-""
-map <C-b> :CtrlPBuffer<CR>
-
-""
 "" Populate the g:airline_symbols dictionary with the powerline symbols
 ""
 let g:airline_powerline_fonts = 1
@@ -210,6 +205,11 @@ map <leader>p "0p
 "" The Silver Searcher
 ""
 set grepprg=ag
+
+""
+"" CtrlP
+""
+map <C-b> :CtrlPBuffer<CR>
 
 ""
 "" Sane Ignore For ctrlp
