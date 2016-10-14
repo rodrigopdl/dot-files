@@ -212,7 +212,12 @@ set grepprg=ag
 map <C-b> :CtrlPBuffer<CR>
 
 ""
-"" Sane Ignore For ctrlp
+"" Set regexp search as the default for CtrlP
+""
+let g:ctrlp_regexp = 1
+
+""
+"" Sane Ignore For CtrlP
 ""
 let g:ctrlp_custom_ignore = {
       \ 'dir': '\.git$\|\.hg$\|\.svn$\|\.yardoc\|public\/images\|public\/system\|data\|log\|tmp$',
