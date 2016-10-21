@@ -336,3 +336,9 @@ vnoremap L g_
 ""
 vmap <C-k> [egv
 vmap <C-j> ]egv
+
+""
+"" Remap q to avoid accidentally triggering recording
+""
+noremap <Leader>q q
+noremap q <Nop>
