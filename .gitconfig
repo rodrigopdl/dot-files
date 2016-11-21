@@ -12,6 +12,7 @@
   dump = cat-file -p
   unstage = reset HEAD --
   discard = checkout --
+  d = !git discard
   go = !git reset --hard origin/`git symbolic-ref --short HEAD`
 
 [push]
