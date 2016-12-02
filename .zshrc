@@ -82,8 +82,12 @@ export BUNDLER_EDITOR='vim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ll='ls -l'
-alias cl='clear'
+
+# Unix
+alias ll="ls -l"
+alias cl="clear"
+
+# Bundler
 alias b="bundle"
 alias be="bundle exec"
 
