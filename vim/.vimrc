@@ -342,3 +342,9 @@ vmap <C-j> ]egv
 ""
 noremap <Leader>q q
 noremap q <Nop>
+
+""
+"" Ctags
+""
+map <Leader>rt :!ctags --tag-relative --extra=+f -Rf.git/tags --exclude=.git,pkg --languages=-javascript,sql<CR><CR>
+set tags+=.git/tags

@@ -20,6 +20,15 @@ ln -s my-dot-files-dir/.ackrc .ackrc
 Open vim and run :PluginInstall
 ```
 
+# Install ctags related things
+
+```
+brew install ctags (or use the package manager you like/have)
+gem install gem-browse
+gem install gem-ctags
+gem ctags
+```
+
 # Iterm notes
 
 * Font: 12pt Hack antialised
