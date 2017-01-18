@@ -1,6 +1,8 @@
 .DS_Store
 *~
+.byebug_history
 tags
+!tags/
 log/
 .netrwhist
 /vim/.netrwhist
