@@ -13,6 +13,7 @@
   unstage = reset HEAD --
   discard = checkout --
   d = !git discard
+  u = !git unstage
   go = !git reset --hard origin/`git symbolic-ref --short HEAD`
 
 [push]
@@ -23,3 +24,5 @@
 
 [rebase]
   autosquash = true
+[core]
+  excludesfile = /Users/rodrigo/.gitignore_global
