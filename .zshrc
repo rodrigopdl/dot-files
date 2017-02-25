@@ -100,3 +100,5 @@ source /usr/local/opt/chruby/share/chruby/auto.sh
 chruby 2.3.3
 
 source ~/.bin/tmuxinator.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

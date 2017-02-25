@@ -3,6 +3,7 @@
 ""
 call plug#begin('~/.vim/plugged')
 
+Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/syntastic'
 Plug 'Tpope/vim-commentary'
 Plug 'Raimondi/delimitMate'
@@ -197,33 +198,14 @@ map <leader>p "0p
 set grepprg=ag
 
 ""
-"" CtrlP
+"" FZF Files
 ""
-map <C-b> :CtrlPBuffer<CR>
+map <C-p> :Files<CR>
 
 ""
-"" Set regexp search as the default for CtrlP
+"" FZF Buffers
 ""
-let g:ctrlp_regexp = 1
-
-""
-"" Sane Ignore For CtrlP
-""
-let g:ctrlp_custom_ignore = {
-      \ 'dir': '\.git$\|\.hg$\|\.svn$\|\.yardoc\|public\/images\|public\/system\|data\|log\|tmp$',
-      \ 'file': '\.exe$\|\.so$\|\.dat$'
-      \ }
-
-""
-"" Make CtrlP use ag for listing the files. Way faster and no useless files.
-"" Without --hidden, it never finds .travis.yml since it starts with a dot
-""
-let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor --nogroup
-      \ --ignore .git
-      \ --ignore .hg
-      \ --ignore .DS_Store
-      \ --ignore "**/*.pyc"
-      \ -g ""'
+map <C-b> :Buffers<CR>
 
 ""
 "" bind K to grep word under cursor
