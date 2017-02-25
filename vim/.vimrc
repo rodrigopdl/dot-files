@@ -36,13 +36,17 @@ noremap <Right> <NOP>
 ""
 "" Basic Setup
 ""
+set nocompatible
 syntax on                         " turn on syntax highlighting allowing local overrides
+filetype plugin indent on
 set history=50                    " keep 50 commands and 50 search patterns in the history
 set ruler                         " show line and column number
 set encoding=utf-8                " set default encoding to UTF-8
 set showcmd                       " display incomplete commands
 set number                        " show line numbers
 set relativenumber                " relative numbering
+set guioptions=
+set noshowmode
 
 set clipboard=unnamed
 
@@ -70,6 +74,7 @@ set incsearch   " incremental searching
 set hlsearch    " highlight matches with the last used search pattern
 nnoremap <CR> :noh<CR><CR>
 
+set ttyfast
 set lazyredraw " Don't redraw screen when running macros.
 
 ""
