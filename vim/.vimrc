@@ -202,15 +202,35 @@ map <leader>p "0p
 ""
 set grepprg=ag
 
-""
-"" FZF Files
-""
-map <C-p> :Files<CR>
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep --smart-case'
+endif
+
+" =====================================
+"  FZF
+" =====================================
+" set fzf's default input to AG instead of find. This also removes gitignore etc
+let $FZF_DEFAULT_COMMAND = 'ag -l -g ""'
+let g:fzf_files_options =
+  \ '--preview "(coderay {} || cat {}) 2> /dev/null | head -'.&lines.'"'
+
+" Use The Silver Searcher for grep https://github.com/ggreer/the_silver_searcher
+if executable('ag')
+  " Use Ag over Grep
+  set grepprg=ag\ --nogroup\ --nocolor
+endif
 
 ""
-"" FZF Buffers
+"" FZF
 ""
-map <C-b> :Buffers<CR>
+nnoremap <C-b> :Buffers<CR>
+nnoremap <C-p> :Files<CR>
+
+"" Insert Mode:
+imap <c-x><c-k> <plug>(fzf-complete-word)
+imap <c-x><c-f> <plug>(fzf-complete-path)
+imap <c-x><c-j> <plug>(fzf-complete-file-ag)
+imap <c-x><c-l> <plug>(fzf-complete-line)
 
 ""
 "" bind K to grep word under cursor
