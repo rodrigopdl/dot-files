@@ -1,36 +1,26 @@
 ""
-"" Vundle
+"" Plug
 ""
-set nocompatible
-filetype off
+call plug#begin('~/.vim/plugged')
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin('~/.vim/plugins')
+Plug 'scrooloose/syntastic'
+Plug 'Tpope/vim-commentary'
+Plug 'Raimondi/delimitMate'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-unimpaired'
+Plug 'airblade/vim-gitgutter'
+Plug 'bronson/vim-trailing-whitespace'
+Plug 'ap/vim-css-color'
+Plug 'slim-template/vim-slim'
+Plug 'tpope/vim-fugitive'
+Plug 'bling/vim-airline'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-git'
+Plug 'thoughtbot/vim-rspec'
+Plug 'pangloss/vim-javascript'
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-Plugin 'scrooloose/syntastic'
-Plugin 'Tpope/vim-commentary'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'Raimondi/delimitMate'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'ap/vim-css-color'
-Plugin 'slim-template/vim-slim.git'
-Plugin 'tpope/vim-fugitive'
-Plugin 'bling/vim-airline'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-git'
-Plugin 'thoughtbot/vim-rspec'
-Plugin 'pangloss/vim-javascript'
-
-call vundle#end()
-filetype plugin indent on
+call plug#end()
 
 colorscheme railscasts
 

@@ -8,4 +8,4 @@ log/
 /vim/.netrwhist
 .bundle
 /vim/tmp
-/vim/plugins
+/vim/plugged
