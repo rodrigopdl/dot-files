@@ -200,9 +200,8 @@ map <leader>p "0p
 ""
 "" The Silver Searcher
 ""
-set grepprg=ag
-
 if executable('ag')
+  set grepprg=ag\ --nogroup\ --nocolor
   let g:ackprg = 'ag --vimgrep --smart-case'
 endif
 
@@ -213,12 +212,6 @@ endif
 let $FZF_DEFAULT_COMMAND = 'ag -l -g ""'
 let g:fzf_files_options =
   \ '--preview "(coderay {} || cat {}) 2> /dev/null | head -'.&lines.'"'
-
-" Use The Silver Searcher for grep https://github.com/ggreer/the_silver_searcher
-if executable('ag')
-  " Use Ag over Grep
-  set grepprg=ag\ --nogroup\ --nocolor
-endif
 
 ""
 "" FZF
