@@ -104,3 +104,19 @@ chruby 2.3.3
 source ~/.bin/tmuxinator.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+gch() {
+  local branches branch
+  branches=$(git branch -vv) &&
+    branch=$(echo "$branches" | fzf +m) &&
+    git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
+}
+
+# fcs - get git commit sha
+# # example usage: git rebase -i `fcs`
+fcs() {
+  local commits commit
+  commits=$(git log --color=always --pretty=oneline --abbrev-commit --reverse) &&
+    commit=$(echo "$commits" | fzf --tac +s +m -e --ansi --reverse) &&
+    echo -n $(echo "$commit" | sed "s/ .*//")
+}
