@@ -15,6 +15,7 @@
   d = !git discard
   u = !git unstage
   go = !git reset --hard origin/`git symbolic-ref --short HEAD`
+  refs=!git reflog | grep checkout | cut -d ' ' -f8 | uniq | head
 
 [push]
   default = simple
