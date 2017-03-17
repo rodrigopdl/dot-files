@@ -20,6 +20,7 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-git'
 Plug 'thoughtbot/vim-rspec'
 Plug 'pangloss/vim-javascript'
+Plug 'kchmck/vim-coffee-script'
 
 call plug#end()
 
