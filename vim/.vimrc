@@ -15,16 +15,14 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'ap/vim-css-color'
 Plug 'slim-template/vim-slim'
 Plug 'tpope/vim-fugitive'
-Plug 'bling/vim-airline'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-git'
 Plug 'thoughtbot/vim-rspec'
 Plug 'pangloss/vim-javascript'
 Plug 'kchmck/vim-coffee-script'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
-
-colorscheme railscasts
 
 ""
 "" Disable arrow keys
@@ -152,23 +150,6 @@ set undofile
 set undodir=~/.vim/tmp/undo
 
 ""
-"" Status line
-""
-set laststatus=2
-set statusline=
-set statusline+=\ \[%n]\                     "Buffer number
-set statusline+=%<%f\                        "File
-set statusline+=%m%r%h%q%w\                  "Modified? Readonly? Help? Quickfix? Preview?
-set statusline+=%{SyntasticStatuslineFlag()} "Add syntastic if enabled
-set statusline+=%{fugitive#statusline()}\    "Add fugitive if enabled
-set statusline+=%y\                          "FileType
-set statusline+=[%{&fenc!=''?&fenc:&enc}     "Encoding
-set statusline+=%{(&bomb?',bom':'')}]\       "Encoding2
-set statusline+=[%{&ff}]\                    "FileFormat
-set statusline+=%=\ Line:%l/%L\ (%p%%)\ \    "Line/total (%)
-set statusline+=Column:%c\                   "Column
-
-""
 "" Layout
 ""
 if &t_Co > 2 || has("gui_running")
@@ -181,10 +162,25 @@ endif
 ""
 let g:gitgutter_eager = 0
 
-""
-"" Populate the g:airline_symbols dictionary with the powerline symbols
-""
-let g:airline_powerline_fonts = 1
+colorscheme gruvbox
+hi vertsplit ctermfg=238 ctermbg=235
+hi LineNr ctermfg=238
+hi CursorLineNR ctermfg=245
+hi StatusLine ctermfg=235 ctermbg=245
+hi StatusLineNC ctermfg=235 ctermbg=237
+hi Search ctermbg=58 ctermfg=15
+hi Default ctermfg=1
+hi clear SignColumn
+hi SignColumn ctermbg=235
+hi GitGutterAdd ctermbg=235 ctermfg=245
+hi GitGutterChange ctermbg=235 ctermfg=245
+hi GitGutterDelete ctermbg=235 ctermfg=245
+hi GitGutterChangeDelete ctermbg=235 ctermfg=245
+hi EndOfBuffer ctermfg=237 ctermbg=235
+
+set statusline=%=%f\ %m\ %P
+set fillchars=vert:\ ,stl:\ ,stlnc:\ 
+set laststatus=2
 
 ""
 "" Set red column marker at 80 characters length
