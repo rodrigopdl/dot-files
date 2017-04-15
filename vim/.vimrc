@@ -176,7 +176,7 @@ hi GitGutterAdd ctermbg=234 ctermfg=245
 hi GitGutterChange ctermbg=234 ctermfg=245
 hi GitGutterDelete ctermbg=234 ctermfg=245
 hi GitGutterChangeDelete ctermbg=234 ctermfg=245
-hi EndOfBuffer ctermfg=237 ctermbg=235
+hi EndOfBuffer ctermfg=245 ctermbg=234
 hi ColorColumn ctermbg=235
 
 set statusline=%=%f\ %m\ %P
