@@ -163,21 +163,21 @@ endif
 let g:gitgutter_eager = 0
 
 colorscheme gruvbox
-hi vertsplit ctermfg=238 ctermbg=234
 hi LineNr ctermfg=238
 hi CursorLineNR ctermfg=239 ctermbg=234
-hi StatusLine ctermfg=234 ctermbg=245
-hi StatusLineNC ctermfg=234 ctermbg=237
+hi StatusLine ctermfg=234 ctermbg=15
+hi StatusLineNC ctermfg=234 ctermbg=238
+hi VertSplit ctermbg=234
 hi Search ctermbg=58 ctermfg=15
 hi Default ctermfg=1
 hi clear SignColumn
-hi SignColumn ctermbg=234
-hi GitGutterAdd ctermbg=234 ctermfg=245
-hi GitGutterChange ctermbg=234 ctermfg=245
-hi GitGutterDelete ctermbg=234 ctermfg=245
-hi GitGutterChangeDelete ctermbg=234 ctermfg=245
-hi EndOfBuffer ctermfg=245 ctermbg=234
-hi ColorColumn ctermbg=235
+hi SignColumn ctermbg=233
+hi GitGutterAdd ctermbg=233 ctermfg=245
+hi GitGutterChange ctermbg=233 ctermfg=245
+hi GitGutterDelete ctermbg=233 ctermfg=245
+hi GitGutterChangeDelete ctermbg=233 ctermfg=245
+hi EndOfBuffer ctermfg=245 ctermbg=233
+hi ColorColumn ctermbg=234
 
 set statusline=%=%f\ %m\ %P
 set fillchars=vert:\ ,stl:\ ,stlnc:\ 
