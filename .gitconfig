@@ -16,6 +16,7 @@
   u = !git unstage
   go = !git reset --hard origin/`git symbolic-ref --short HEAD`
   refs=!git reflog | grep checkout | cut -d ' ' -f8 | uniq | head
+  pair= commit --author=\"Rodrigo & Gonzalo <rodrigo+gonzalo@wyeworks.com>\"
 
 [push]
   default = simple
