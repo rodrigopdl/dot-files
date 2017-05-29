@@ -93,9 +93,6 @@ endfunction
 " use the indent of the previous line for a newly created line
 set autoindent
 
-" turn on filetype plugins (:help filetype-plugin)
-filetype plugin indent on
-
 " use real tabs ...
 autocmd FileType make set noexpandtab
 autocmd FileType python set noexpandtab
