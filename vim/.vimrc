@@ -39,6 +39,7 @@ noremap <Right> <NOP>
 set nocompatible
 syntax on                         " turn on syntax highlighting allowing local overrides
 filetype plugin indent on
+set formatoptions-=t
 set history=50                    " keep 50 commands and 50 search patterns in the history
 set ruler                         " show line and column number
 set encoding=utf-8                " set default encoding to UTF-8
