@@ -206,7 +206,7 @@ endif
 "  FZF
 " =====================================
 " set fzf's default input to AG instead of find. This also removes gitignore etc
-let $FZF_DEFAULT_COMMAND = 'ag -l -g ""'
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 let g:fzf_files_options =
   \ '--preview "(coderay {} || cat {}) 2> /dev/null | head -'.&lines.'"'
 
