@@ -97,7 +97,7 @@ alias glog="git log --oneline --decorate --graph"
 alias migrate="bundle exec rake db:migrate db:rollback && bundle exec rake db:migrate db:test:prepare"
 
 # Dir shortcuts
-alias cdtrr="cd ~/Documents/Coding/RealReal/projects/real-server"
+alias cdtrr="cd ~/Documents/Coding/Wye/Projects/TheRealReal/real-server"
 
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
