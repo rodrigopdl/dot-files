@@ -329,3 +329,8 @@ noremap q <Nop>
 ""
 map <Leader>rt :!ctags --tag-relative --extra=+f -Rf.git/tags --exclude=.git,pkg --languages=-javascript,sql<CR><CR>
 set tags+=.git/tags
+
+""
+"" GBrowse
+""
+map <leader>b :Gbrowse<CR>
