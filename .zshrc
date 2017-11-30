@@ -90,8 +90,11 @@ alias cl="clear"
 # Bundler
 alias b="bundle"
 alias be="bundle exec"
+alias bo="bundle open"
 
 alias glog="git log --oneline --decorate --graph"
+
+alias gc="git switch"
 
 # Rails
 alias migrate="bundle exec rake db:migrate db:rollback && bundle exec rake db:migrate db:test:prepare"

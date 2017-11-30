@@ -121,7 +121,7 @@ autocmd BufReadPost *
 " Turn on spell checking for git commits
 autocmd FileType gitcommit setlocal spell
 
-""
+"
 "" Wild settings
 ""
 " list all matches and complete till longest common string
@@ -264,6 +264,7 @@ map <Leader>v :vnew <C-R>=escape(expand("%:p:h"), ' ') . '/'<CR>
 ""
 command! -nargs=* -bar -bang -count=0 -complete=dir E Explore <args>
 command! -nargs=* -bar -bang -count=0 -complete=dir VE Vexplore <args>
+let g:netrw_banner=0
 
 ""
 "" Remap H and L (top, bottom of screen to left and right end of line)
