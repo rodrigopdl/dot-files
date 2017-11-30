@@ -16,11 +16,14 @@ Plug 'slim-template/vim-slim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-rails'
-Plug 'tpope/vim-git'
 Plug 'thoughtbot/vim-rspec'
 Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 Plug 'kchmck/vim-coffee-script'
 Plug 'morhetz/gruvbox'
+Plug 'mattn/emmet-vim'
+Plug 'w0rp/ale'
+Plug 'elzr/vim-json'
 
 call plug#end()
 
@@ -106,7 +109,8 @@ autocmd BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,Procfile,confi
 autocmd BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn,txt} setf markdown | call s:setupWrapping()
 
 " Treat JSON files like JavaScript
-autocmd BufNewFile,BufRead *.json set filetype=javascript
+" autocmd BufNewFile,BufRead *.json set filetype=javascript
+au BufRead,BufNewFile,BufReadPost *.json set syntax=json
 
 autocmd BufNewFile,BufRead *.flex set filetype=lex
 
@@ -334,3 +338,15 @@ set tags+=.git/tags
 "" GBrowse
 ""
 map <leader>b :Gbrowse<CR>
+
+""
+"" Ale
+""
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\   'ruby': []
+\}
+let g:ale_fixers = {}
+let g:ale_fixers["javascript"] = ["prettier"]
+let g:ale_fix_on_save = 1
+let g:ale_javascript_prettier_options = "--parser=flow"
