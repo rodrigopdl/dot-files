@@ -29,3 +29,5 @@
   autosquash = true
 [core]
   excludesfile = /Users/rodrigo/.gitignore_global
+[stash]
+  showPatch = true
