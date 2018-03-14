@@ -56,7 +56,9 @@ ZSH_THEME="robbyrussell"
 # export PATH="/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export GOPATH=$HOME/go
 export NODEPATH=/usr/local/Cellar/node/7.10.0/bin
-export PATH="/usr/local/bin:$PATH:$NODEPATH:$GOPATH/bin"
+# export PYPATH=/Library/Frameworks/Python.framework/Versions/2.7/bin
+export PYPATH=/usr/local/opt/python@2/libexec/bin
+export PATH="/usr/local/bin:$PYPATH:$NODEPATH:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
