@@ -65,9 +65,9 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-export EDITOR='vim'
+export EDITOR='mvim -v'
 
-export BUNDLER_EDITOR='vim'
+export BUNDLER_EDITOR='mvim -v'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -100,13 +100,11 @@ alias gc="git switch"
 # Rails
 alias migrate="bundle exec rake db:migrate db:rollback && bundle exec rake db:migrate db:test:prepare"
 
-# Dir shortcuts
-alias cdtrr="cd ~/Documents/Coding/Wye/Projects/TheRealReal/real-server"
-
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 
-chruby 2.3.3
+alias vim="mvim -v"
+chruby 2.5.0
 
 source ~/.bin/tmuxinator.zsh
 
