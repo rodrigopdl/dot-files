@@ -68,6 +68,9 @@ set backspace=indent,eol,start    " backspace through everything in insert mode
 let ruby_space_errors=1
 let c_space_errors=1
 
+" Share clipboard with OS, it can destroy your normal yank, wtf!
+set clipboard=unnamed
+
 ""
 "" Searching
 ""
