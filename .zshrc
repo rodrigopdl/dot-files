@@ -99,9 +99,6 @@ alias glog="git log --oneline --decorate --graph"
 
 alias gc="git switch"
 
-# Rails
-alias migrate="bundle exec rake db:migrate db:rollback && bundle exec rake db:migrate db:test:prepare"
-
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 
@@ -111,19 +108,4 @@ chruby 2.5.0
 source ~/.bin/tmuxinator.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-gch() {
-  local branches branch
-  branches=$(git branch -vv) &&
-    branch=$(echo "$branches" | fzf +m) &&
-    git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
-}
-
-# fcs - get git commit sha
-# # example usage: git rebase -i `fcs`
-fcs() {
-  local commits commit
-  commits=$(git log --color=always --pretty=oneline --abbrev-commit --reverse) &&
-    commit=$(echo "$commits" | fzf --tac +s +m -e --ansi --reverse) &&
-    echo -n $(echo "$commit" | sed "s/ .*//")
-}
+export PATH="/usr/local/opt/postgresql@9.4/bin:$PATH"

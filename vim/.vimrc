@@ -5,7 +5,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'Tpope/vim-commentary'
-Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-unimpaired'
@@ -18,13 +17,7 @@ Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-rails'
 Plug 'thoughtbot/vim-rspec'
 Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'kchmck/vim-coffee-script'
 Plug 'morhetz/gruvbox'
-Plug 'mattn/emmet-vim'
-Plug 'w0rp/ale'
-Plug 'elzr/vim-json'
-
 call plug#end()
 
 ""
@@ -37,9 +30,7 @@ noremap <Right> <NOP>
 
 ""
 "" Basic Setup
-""
 set nocompatible
-syntax on                         " turn on syntax highlighting allowing local overrides
 filetype plugin indent on
 set formatoptions-=t
 set history=50                    " keep 50 commands and 50 search patterns in the history
@@ -47,11 +38,9 @@ set ruler                         " show line and column number
 set encoding=utf-8                " set default encoding to UTF-8
 set showcmd                       " display incomplete commands
 set number                        " show line numbers
-set relativenumber                " relative numbering
 set guioptions=
 set noshowmode
-
-set clipboard=unnamed
+set regexpengine=1 " use old engine
 
 "some stuff to get the mouse going in term
 set mouse=a
@@ -157,9 +146,8 @@ set undodir=~/.vim/tmp/undo
 ""
 "" Layout
 ""
-if &t_Co > 2 || has("gui_running")
+if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
-  set hlsearch
 endif
 
 ""
@@ -341,15 +329,3 @@ set tags+=.git/tags
 "" GBrowse
 ""
 map <leader>b :Gbrowse<CR>
-
-""
-"" Ale
-""
-let g:ale_linters = {
-\   'javascript': ['eslint'],
-\   'ruby': []
-\}
-let g:ale_fixers = {}
-let g:ale_fixers["javascript"] = ["prettier"]
-let g:ale_fix_on_save = 1
-let g:ale_javascript_prettier_options = "--parser=flow"
