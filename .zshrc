@@ -24,6 +24,7 @@ alias bo="bundle open"
 
 alias glog="git log --oneline --decorate --graph"
 alias gc="git switch"
+alias clean="git clean -i"
 
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
