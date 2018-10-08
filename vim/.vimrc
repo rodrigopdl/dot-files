@@ -153,7 +153,7 @@ endif
 ""
 "" GitGutter
 ""
-let g:gitgutter_eager = 0
+set updatetime=100
 
 colorscheme gruvbox
 hi LineNr ctermfg=238
