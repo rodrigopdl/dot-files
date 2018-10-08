@@ -4,20 +4,14 @@
 
 [alias]
   ch = checkout
-  ci = commit
   st = status
   br = branch
-  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-  type = cat-file -t
-  dump = cat-file -p
   unstage = reset HEAD --
   discard = checkout --
   d = !git discard
   u = !git unstage
   go = !git reset --hard origin/`git symbolic-ref --short HEAD`
   gogo = !git fetch && git go
-  refs=!git reflog | grep checkout | cut -d ' ' -f8 | uniq | head
-  pair= commit --author=\"Rodrigo & Gonzalo <rodrigo+gonzalo@wyeworks.com>\"
 
 [push]
   default = simple
