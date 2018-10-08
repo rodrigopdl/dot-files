@@ -58,7 +58,7 @@ export GOPATH=$HOME/go
 export NODEPATH=/usr/local/Cellar/node/7.10.0/bin
 # export PYPATH=/Library/Frameworks/Python.framework/Versions/2.7/bin
 export PYPATH=/usr/local/opt/python@2/libexec/bin
-export PATH="/usr/local/bin:$PYPATH:$NODEPATH:$PATH"
+export PATH="/usr/local/bin:$PYPATH:$NODEPATH:$(brew --prefix qt@5.5)/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
