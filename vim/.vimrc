@@ -18,6 +18,7 @@ Plug 'tpope/vim-rails'
 Plug 'thoughtbot/vim-rspec'
 Plug 'pangloss/vim-javascript'
 Plug 'morhetz/gruvbox'
+Plug 'elixir-editors/vim-elixir'
 call plug#end()
 
 ""
