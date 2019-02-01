@@ -2,11 +2,8 @@ export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"
 
-export GOPATH=$HOME/go
 export NODEPATH=/usr/local/Cellar/node/7.10.0/bin
-export PYPATH=/usr/local/opt/python@2/libexec/bin
-export PATH="/usr/local/bin:$PYPATH:$NODEPATH:$(brew --prefix qt@5.5)/bin:$PATH"
-export PATH="/usr/local/opt/postgresql@9.4/bin:$PATH"
+export PATH="/usr/local/bin:$NODEPATH:/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
