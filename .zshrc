@@ -29,7 +29,7 @@ alias clean="git clean -i"
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 
-chruby 2.5.0
+chruby 2.5.3
 
 source ~/.bin/tmuxinator.zsh
 
