@@ -27,7 +27,7 @@ source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 source /usr/local/opt/asdf/asdf.sh
 
-chruby 2.5.3
+chruby 2.6.0
 
 source ~/.bin/tmuxinator.zsh
 
