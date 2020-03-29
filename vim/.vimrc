@@ -245,7 +245,7 @@ map <Leader>a :call RunAllSpecs()<CR>
 ""
 "" Overwrite the g:rspec_command variable to execute a custom command.
 ""
-let g:rspec_command = "!bin/rspec {spec}"
+let g:rspec_command = "!bundle exec rspec {spec}"
 
 ""
 "" Edit another file in the same directory as the current file
