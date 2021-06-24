@@ -5,6 +5,8 @@ ZSH_THEME="robbyrussell"
 export NODEPATH=/usr/local/Cellar/node/7.10.0/bin
 export PATH="/usr/local/bin:$NODEPATH:/bin:$PATH"
 
+ZSH_DISABLE_COMPFIX=true
+
 source $ZSH/oh-my-zsh.sh
 
 export EDITOR='mvim -v'
@@ -25,14 +27,7 @@ alias clean="git clean -i"
 
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
-source /usr/local/opt/asdf/asdf.sh
 
-chruby 2.7.0
-
-source ~/.bin/tmuxinator.zsh
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+chruby 3.0.0
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
